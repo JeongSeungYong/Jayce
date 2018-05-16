@@ -1,0 +1,238 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> 제이스의 일지 -웹프로그레밍- </title>
+
+</head>
+<body>
+
+<h1> 웹프로그레밍 페이지 입니다. </h1>
+<br>
+<p>이전 페이지로 <a href="../index.html" title="제이스의 일지 메인으로 돌아갑니다.">돌아가기</a></p>
+<br>
+<br>
+<br>
+
+<p>
+<h3>target속성에 대하여</h3>
+target 속성은 웹페이지 내의 링크에서 <u>새창</u>으로 다른 링크의 페이지를 열고 싶을때 사용하는 속성 으로,<br>
+&lt;a&gt;요소와 함꼐 사용 됩니다.<br>
+<br>
+<strong>예)</strong> &lt;a href="jeongseungyong.github.io/Jayce" <u>target="_blank"</u>&gt;새창으로연결&lt;/a&gt;<br>
+target 속성에 _blank 가 들어가 새창에서 홈페이를 열게 됩니다.<br>
+<br>
+<strong>오후 8:42 2018-05-15</strong>
+</p>
+<br>
+<br>
+<br>
+<p>
+<h3>절대 경로 사용하기</h3>
+절대 경로란 도메인을 포함한 디랙토리 루트 폴더부터 원하고자 하는 목적지 까지의 주소를 절대 경로라고 한다.<br>
+도메인이 www.homepage.com이라고 가정해보자 그럴때 내가 연결하고자 하는 디랙토리가 main_file/image 라고 할때,
+절대 결로는 www.homepage.com/main_file/image 가 된다.<br>
+이 절대 경로는 <a>요소와 함께 사용해 주로 다른 홈페이지를 링크를 걸때 사용하는데,
+ 지금 보시는 제 페이지를 자신의 홈페이지에 링크를 건다면,<br>
+ &lt;a href="https://jeongseungyong.github.io/Jayce"&gt;제이스의 일지&lt;/a&gt;<br>
+이렇게 적으면 제 홈페이지가 제 절대경로의 주소에 의해 여러분의 홈페이지에 링크가 걸려질것입니다.<br>
+</p>
+<br>
+<br>
+<br>
+<p>
+<h3>id 속성을 사용해 목적지 생성하기</h3>
+예를 들어 우리가 한페이지에 300줄 이상의 긴 문장이 담긴 홈페이지를 만들었다고 합시다.<br>
+그곳 중간 중간에 우리가 원하는 그곳만을 찾아보고 싶은 곳이 있을겁니다.<br>
+그런곳에 id속성에 값을 부여해 참조할때 쓰는 색인 기능처럼 사용합니다.<br>
+우리가 만든 홈페이지 어떤 곳에 식별자를 부여해 그곳으로 링크를 걸어 이동할수 있습니다.<br>
+<br>
+<strong>예)</strong> &lt;h3&gt;이곳은 이동하고 싶은 소제목 입니다&lt;/h3&gt;<br>
+여기에 여러분이 이동하고 싶은 소제목이 있습니다.<br>
+id 속성은 &lt; &gt; 태그 안에 어디든지 속성으로 들어가 목적지를 만들수 있습니다.<br>
+&lt;h3 id="here"&gt; 이곳은 이동하고 싶은 소제목 입니다&lt;/h3&gt;<br>
+위의 코드에 h3요소 안에 here이라는 식별자를 생성했습니다.<br>
+<br>
+<h3>id속성을 가진 요소와 연결 하는 방법</h3>
+위에서는 id속성을 사용해 목적지를 생성했는데요.<br>
+이번에는 그 생성한 목적지로 연결 하는 방법을 알아 보겠습니다.<br>
+그 방법은 간단 합니다. &lt;a&gt;요소의 경로 뒷편에 #과 이동하고자 하는 식별자를 적어 넣으면 됩니다.<br>
+예) &lt;a href="jeongseungyong.github.io/Jayce/index.html#here&gt;여러분이 이동하고 싶은 소제목으로 이동합니다&lt;/a&gt;<br>
+위의 링크를 클릭하면 입력된 식별자를 가진 목적지로 링크를 통해 이동하게 됩니다.<br>
+<br>
+<strong>오후 8:35 2018-05-14</strong>
+</p>
+<br>
+<br>
+<br>
+<p>
+<h3>웹에 특수 문자 코딩하기
+</h3><br>
+&lt;나 &gt;, &amp;등 특수 문자를 웹에 나타내게 할때는 &lt;는 &amplt;, &gt;는 &ampgt;, &amp;는 &ampamp;로 코딩 하면 웹상에서 표시가 되는걸 볼수 있다.<br>
+<br>
+
+&lt;dl&gt;  &lt;/dl&gt; 정의(definition)형 리스트로 순서화된, 순서화 되지 않은 과 같은 리스트의 한 종류.<br>
+
+&lt;dt&gt;  &lt/dt&gt; 와 &ltdd&gt;  &lt;/dd&gt; 가 함께 사용되며 단어나 어떤 것을 정의 할때 사용된다.
+<br>
+예) &lt;dl&gt;<br>
+
+&lt;dt&gt;어떤것을 정의 합니다&lt;/dt&gt;<br>
+
+&lt;dd&gt;정의한 것에 대한 설명이 여기에 옵니다.&lt;/dd&gt;<br>
+
+&lt;/dl&gt;<br>
+<br>
+<strong>오후 7:34 2018-05-09</strong>
+</p>
+<br>
+<br>
+<br>
+<p>
+<h3> 2018-05-08 오늘의 태그 </h3> <br>
+&lt;img src=" "&gt; <br>
+ img 태그는 image의 약자로 html문서에 이미지를 넣고 싶을 때 사용하는 태그다.
+ <br>
+Src는 source의 약자로 뒤의 " "안의 주소를 근원으로 이미지를 불러오겠다는 의미다. <br>
+
+이미지가 있는곳을 " "안에 경로를 넣어주면 된다.
+ <br>
+<br>
+
+Width <br>
+width는 img 태그와 함께 쓰여 이미지의 크기를 숫자 또는 %단위로 줄여 주거나 키울수 있는 명령어다. <br>
+
+예)&lt;img src=" " width=100%&gt; <br>
+<br>
+
+
+&lt;li&gt; 리스트 아이탬 &lt;/li&gt; 
+Li 태그는 리스트를 만드는 태그로 list item의 약자 이다. <br>
+
+예) &lt;li&gt;왼편에 리스트가 만들어 집니다.&lt;li&gt; <br>
+<li> 왼편에 리스트가 만들어 집니다.</li> <br>
+
+
+<ol>  </ol> ol태그는 li태그와 함께 사용되며 odered list의 약자다.
+ <br>
+예) <ol>
+
+<li>순서화된 리스트</li>
+
+<li>왼쪽에 숫자가 달린다</li>
+
+</ol>
+
+
+<br>
+<nl> </nl> nl태그는 ol과 마찬가지로 li태그와 함께 사용되며 unordered list의 약자이다
+. <br>
+예)<nl>
+
+<li> 순서화 되지 않은 리스트 </li>
+<li> 왼쪽에 li처럼 표시가 된다.</li>
+
+</nl>
+<br>
+<strong> 오후 8:30 2018-05-08 </strong>
+</p>
+<br>
+<br>
+<br>
+<p>
+<h3> 2018-05-07 오늘의 태그 </h3> <br>
+<br> br태그는 <u>줄바꿈 할때 사용하는 태그</u>다. <br>
+
+엔터와 같은 기능을 하기 때문에 직접 사용해보면 금방 익힐수 있다.
+ <br>
+예) 다음줄로 개행 합니다 <br>
+다음줄로 개행 됬네요. <br>
+<br>
+<q> 인용구 </q> q태그는 인용문에 사용하는 태그로 quotation의 약자로 시작된다. <br>
+
+예) <q> 양쪽에 큰따옴표가 추가 된다 </q><br>
+<br>
+<blockquote> 블록 인용구 </blockquote> <br>
+
+Blockquite태그는 책에는 인용구를 사용할때 사용한다고 나와 있는데 내가 보기에는 <u>들여쓰기를 해주고 문단기능</u>을 가지고 있는 태그 이다. <br>
+
+주의할점으로는 영어 단어의 철자는 quotation이지만 태그에서는 blackquote로 사용한다
+. <br>
+예)<blackquote> 왼쪽으로 들여쓰기가 된다 </blackquote>
+ <br>
+<br>
+<strong> 오후 6:43 2018-05-07 </strong>
+</p>
+<br>
+<br>
+<br>
+<p>
+<h3> <strong> 2018-05-05 오늘의 태그 </strong> </h3> <br>
+
+<strong> 강조 </strong> <br>
+
+Strong 태그 strong 요소는 문장을 강조할때 사용한다. <br>
+
+예) <strong> 문장을 강조! </strong> <br>
+<br>
+
+<u> 밑줄 </u> <br>
+
+<br>
+U 태그 u태그는 underline 의 약자로 강조하고 싶은 단어나 문장에 밑줄을 쳐주는 요소이다. <br>
+
+예)<u> 밑줄로 강조! </u> <br>
+
+<br>
+
+<h1~6>  </h1~6>
+H태그는 뒤에 1부터 6까지 숫자를 넣어 높을수록 크게 낮을수록 작게 만들어 제목을 강조해 나타내게 하는 태그이다. <br>
+
+예)<h1> 문장의 제목! </h1>
+<br>
+
+
+<br> 
+Br 태그는 줄바꿈을 해주는 태그다. <br>
+
+예) 안녕하세요. <br> 제 이름은 제이스 입니다. <br>
+
+
+<p>  </p> 
+P태그는 단락을 만들기 위한 태그 이다
+. <br>
+문장에 양쪽으로 감싸주면 한 단락이 된다.
+ <br>
+예)<p> 지금 한 단락을 만들었습니다. </p> <br>
+
+
+*CSS 명령어
+css명령어는 html명령어와 함께 사용하며 html을 보조하며 함께 사용된다. <br>
+
+
+style="margin-top:45px;" <br>
+
+설명:) 이 명령어가 들어간 어디든 위쪽에 45px의 공간을 만드는 명령어 이다. <br>
+
+
+위의 style명령어는 html태그의 어디든 들어가 조합 되는데 margin-top:45px 말고도 다른 명령어가 들어가 웹페이지를 꾸며주는 역할을 한다. <br>
+
+예)<p style="margin-top:45px"> p가 사용되 문단에 적용되며 이 문단의 위쪽에 45px 의 빈공간이 추가 된다. </p> <br>
+
+예)<head>
+Body={
+Style="margin-light:50px";
+}
+</head> <br>
+
+설명:) 위의 예는 head에 css명령어가 위치했는데 의미는 body의 스타일을 정의 한다는것으로 body부분의 위쪽에 마진을 50px을 준다는 뜻이다.
+ <br>
+<br>
+<strong> 오후 10:02 2018-05-05 </strong> <br>
+</p>
+
+<br>
+<br>
+<br>
+</body>
+</html>
